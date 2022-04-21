@@ -1,0 +1,78 @@
+
+body {
+  background-color: #A9A9A9;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+ 
+  text-align: center;
+}
+
+
+h4 {
+ 
+  text-align: center;
+}
+
+
+p {
+  text-align: center;
+}
+
+
+.button {
+  display: block;
+  margin: auto;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+}
+
+
+.tanah {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.tanah::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 90px;
+  position: absolute;
+  background: url(./assets/image/tanah.png) bottom center no-repeat;
+  background-size: 90%;
+  top: 20px;
+}
+
+.andy {
+  width: 100px;
+  height: 100px;
+  background: url(./assets/image/andy.png) bottom center no-repeat;
+  position: absolute;
+  background-size: 100%;
+  top: 40px;
+  transition: top 0.3s;
+}
+
+.tanah.muncul .andy {
+  top: -8px;
+}
+
+  
